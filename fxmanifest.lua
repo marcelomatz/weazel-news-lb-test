@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'The Rabbit'
-description 'Weazel News APP'
+description 'Weazel News'
 version '1.0.0'
 
 shared_scripts {
@@ -21,5 +21,10 @@ server_scripts {
 ui_page 'ui/index.html'
 
 files {
-    'ui/*'
-} 
+    'ui/index.html',
+    'ui/style.css',
+    'ui/app.js',
+    'ui/assets/*.png'
+}
+
+dependency 'lb-phone' 
