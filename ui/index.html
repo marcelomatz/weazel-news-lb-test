@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <title>Weazel News</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="h-full overflow-hidden">
+    <div id="app" class="h-full flex flex-col">
+        <header class="flex-none">
+            <div class="logo">
+                <img src="img/weazel-logo.png" alt="Weazel News">
+            </div>
+            <nav>
+                <button class="nav-btn active" data-section="noticias">
+                    <i class="fas fa-newspaper"></i>
+                    Notícias
+                </button>
+                <button class="nav-btn" data-section="videos">
+                    <i class="fas fa-video"></i>
+                    Vídeos
+                </button>
+                <button class="nav-btn" data-section="radio">
+                    <i class="fas fa-broadcast-tower"></i>
+                    Rádio
+                </button>
+            </nav>
+        </header>
+
+        <main class="flex-1 overflow-y-auto">
+            <!-- Seção de Notícias -->
+            <section id="noticias" class="section active h-full">
+                <div class="destaque">
+                    <div class="noticia-principal">
+                        <!-- Será preenchido via JavaScript -->
+                    </div>
+                </div>
+                <div class="lista-noticias overflow-y-auto">
+                    <!-- Será preenchido via JavaScript -->
+                </div>
+            </section>
+
+            <!-- Seção de Notícia Detalhada -->
+            <section id="noticia-detalhada" class="section h-full overflow-y-auto">
+                <button class="voltar-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar
+                </button>
+                <div class="noticia-conteudo">
+                    <!-- Será preenchido via JavaScript -->
+                </div>
+            </section>
+
+            <!-- Seção de Vídeos -->
+            <section id="videos" class="section h-full overflow-y-auto">
+                <div class="grid-videos">
+                    <!-- Será preenchido via JavaScript -->
+                </div>
+            </section>
+
+            <!-- Seção de Rádio -->
+            <section id="radio" class="section h-full">
+                <div class="player-radio">
+                    <div class="radio-info">
+                        <h2>Weazel Radio ao Vivo</h2>
+                        <p class="programa-atual">Programa Atual: <span>Notícias da Manhã</span></p>
+                    </div>
+                    <div class="controles-radio">
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="volume-control">
+                            <i class="fas fa-volume-up"></i>
+                            <input type="range" min="0" max="100" value="50">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
